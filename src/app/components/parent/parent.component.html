@@ -1,0 +1,15 @@
+<h2>Parent Component</h2>
+
+<h3>Primitive Data: {{primitiveData}}</h3>
+<button (click)="changePrimitiveData()">Change Primitive Data </button>
+
+
+<h3>Non Primitive Data: {{nonPrimitiveData | stringify}}</h3>
+<button (click)="changeNonPrimitiveData()">Change Non Primitive Data </button>
+
+<br>
+<br>
+
+--------------------------------------------------------------------------------------------------------------
+
+<app-child [sharedData]="nonPrimitiveData"></app-child>
